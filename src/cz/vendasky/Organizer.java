@@ -18,4 +18,12 @@ public class Organizer {
         return this.tasks;
     }
 
+    public void removeTasksWithoutDependencies() {
+        for (int i = 0; i < tasks.size(); i++) {
+            if (this.tasks.get(i).getDependencies().size() == 0) {
+                this.tasks.remove(i);
+                i--;
+            }
+        }
+    }
 }
