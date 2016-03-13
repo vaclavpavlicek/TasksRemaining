@@ -13,7 +13,7 @@ public class TaskTest {
 
     @Before
     public void setUp() {
-        task = new Task(0);
+        task = new Task(0, 6);
     }
 
     @Test
